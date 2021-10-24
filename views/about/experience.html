@@ -1,0 +1,70 @@
+<head>
+  <title> My Experience </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../../javascripts/header.js"></script>
+  <link rel="stylesheet" type="text/css" href="../../stylesheets/main.css">
+  <link rel="stylesheet" type="text/css" href="../../stylesheets/header.css">
+  <link rel="stylesheet" type="text/css" href="../../stylesheets/footer.css">
+</head>
+
+<header>
+  <div class="topnav" id="myTopnav">
+    <a href="../../home.html"> Home
+      <!-- <i class="fa fa-fw fa-camera-retro"></i> -->
+    </a>
+    <div class="dropdown">
+    <a onclick="activate_about();" class="active"> About <i class="fa fa-fw fa-angle-down"></i></a>
+      <div class="dropdown-content">
+        <a href="me.html"> About Me </a>
+        <a href="experience.html"> My Experience </a>
+      </div>
+    </div>
+    <div class="dropdown">
+    <a> Galleries <i class="fa fa-fw fa-angle-down"></i></a>
+      <div class="dropdown-content">
+        <a href="../galleries/events.html" onclick="activate_galleries();"> Events </a>
+        <a href="../galleries/couples.html" onclick="activate_galleries();"> Couples </a>
+        <a href="../galleries/pregnancy.html" onclick="activate_galleries();"> Pregnancy </a>
+        <a href="../galleries/boudoir.html" onclick="activate_galleries();"> Boudoir </a>
+        <a href="../galleries/art.html" onclick="activate_galleries();"> Expression and Personal </a>
+      </div>
+    </div>
+    <div class="dropdown">
+    <a> Pricing <i class="fa fa-fw fa-angle-down"></i></a>
+      <div class="dropdown-content">
+        <a href="../pricing/packages.html" onclick="activate_pricing();"> Packages </a>
+        <a href="../pricing/rate.html" onclick="activate_pricing();"> Hourly </a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a> Information <i class="fa fa-fw fa-angle-down"></i></a>
+      <div class="dropdown-content">
+        <a href="../information/before.html" onclick="activate_info();"> How to Prepare </a>
+        <a href="../information/expect.html" onclick="activate_info();"> What to Expect </a>
+        <a href="../information/locations.html" onclick="activate_info();"> Location Options </a>
+      </div>
+    </div>
+    <a href="../faq.html" onclick="activate_faqs();"> FAQs </a>
+    <a href="../contact.html" onclick="activate_contact();"> Contact </a>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</header>
+
+<body>
+  <h1> My Experience </h1>
+</body>
+
+<footer>
+  <i class="fa fa-fw fa-copyright"></i> Dream Photos 2021
+  <div class="contact">
+    <i class="fa fa-fw fa-facebook"></i>
+    <i class="fa fa-fw fa-instagram"></i>
+    <i class="fa fa-fw fa-envelope"></i>
+  </div>
+</footer>
+
+<!-- close x button
+<i class="fa fa-fw fa-close close-tab"> -->

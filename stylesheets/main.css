@@ -1,0 +1,48 @@
+@import url('http://fonts.cdnfonts.com/css/bogle');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+header, body, footer {
+  font-family: 'Bogle', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bolder;
+}
+
+h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 10;
+  font-style: italic;
+  color: #626262;
+}
+
+.images {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  margin: 25px 18px 15px 18px;
+  padding: 2px;
+  text-align: center;
+}
+
+.img-item {
+  position: relative;
+  display: inline-block;
+  padding: 5px;
+  margin: auto;
+}
+
+.img-item:hover {
+  filter: brightness(35%);
+}
+
+.black { color: #000000 }	/* black */
+.light-grey { color: #AEAEAE } /* light grey */
+.grey { color: #626262 } /* grey */
+.magenta { color: #290013 } /* magenta */
+.dark-magenta { color: #270012 } /* dark magenta */
+.green { color: #1A2D00 } /* green */
+.dark-green { color: #192A00 } /* dark green */

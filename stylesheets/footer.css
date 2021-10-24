@@ -1,0 +1,20 @@
+footer {
+  background-color: #290013;
+  text-align: center;
+  padding: 36px;
+  color: #AEAEAE;
+  border-bottom: 0px;
+  height: 100px;
+}
+
+.contact {
+  /* display: flex; */
+  flex-direction: row;
+  /* text-align: center; */
+}
+
+.contact i {
+  padding: 20px;
+  margin: 20px;
+  font-size: 30px;
+}

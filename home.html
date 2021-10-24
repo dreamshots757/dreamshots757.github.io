@@ -1,31 +1,97 @@
-<html>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<head>
-		<title> Seattle's Experiments </title>
-	<body>
-		<h1> Index </h1>
-		<p> A few little WebGL visualizations with <br>
-			lots of help from <a href="http://threejs.org">Three.js</a>
-			(in progress...) </p>
+<head>
+  <title> Home </title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="javascripts/header.js"></script>
+  <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/header.css">
+  <link rel="stylesheet" type="text/css" href="stylesheets/footer.css">
+</head>
 
-		<h2> Algorithms</h2>
-		<div id="bullet">
-			<a href="http://sruzek.github.io/algorithms/dijkstras.html">Dijkstras Single Pair Shortest Path</a>
-		<br>
-		<br>
-			<a href="http://sruzek.github.io/algorithms/selection.html"> Selection Sort</a>
-		<br>
-		<br>
-			<a href="http://sruzek.github.io/algorithms/merge.html"> Merge Sort</a>
-		<br>
-		<br>
-		</div>
-		<h2>Biology</h2>
-		<div id="bullet">
-			<a href="http://sruzek.github.io/biology/molecules.html"> Water Molecules</a>
-		</div>
-		<div id="footer">
-			<a href="https://github.com/sruzek/sruzek.github.io">Sourcecode</a>
-		</div>
-	</body>
-</html>
+<header>
+  <div class="topnav" id="myTopnav">
+    <a href="home.html" class="active"> Home
+      <!-- <i class="fa fa-fw fa-camera-retro"></i> -->
+    </a>
+    <div class="dropdown">
+    <a onclick="activate_about();"> About <i class="fa fa-fw fa-angle-down"></i></a>
+      <div class="dropdown-content">
+        <a href="views/about/me.html"> About Me </a>
+        <a href="views/about/experience.html"> My Experience </a>
+      </div>
+    </div>
+    <div class="dropdown">
+    <a> Galleries <i class="fa fa-fw fa-angle-down"></i></a>
+      <div class="dropdown-content">
+        <a href="views/galleries/events.html" onclick="activate_galleries();"> Events </a>
+        <a href="views/galleries/couples.html" onclick="activate_galleries();"> Couples </a>
+        <a href="views/galleries/pregnancy.html" onclick="activate_galleries();"> Pregnancy </a>
+        <a href="views/galleries/boudoir.html" onclick="activate_galleries();"> Boudoir </a>
+        <a href="views/galleries/art.html" onclick="activate_galleries();"> Expression and Personal </a>
+      </div>
+    </div>
+    <div class="dropdown">
+    <a> Pricing <i class="fa fa-fw fa-angle-down"></i></a>
+      <div class="dropdown-content">
+        <a href="views/pricing/packages.html" onclick="activate_pricing();"> Packages </a>
+        <a href="views/pricing/rate.html" onclick="activate_pricing();"> Hourly </a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a> Information <i class="fa fa-fw fa-angle-down"></i></a>
+      <div class="dropdown-content">
+        <a href="views/information/before.html" onclick="activate_info();"> How to Prepare </a>
+        <a href="views/information/expect.html" onclick="activate_info();"> What to Expect </a>
+        <a href="views/information/locations.html" onclick="activate_info();"> Location Options </a>
+      </div>
+    </div>
+    <a href="views/faq.html" onclick="activate_faqs();"> FAQs </a>
+    <a href="views/contact.html" onclick="activate_contact();"> Contact </a>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</header>
+
+<body>
+  <h1 class="title"> Dream Photos </h1>
+  <h2 class="subtitle">
+    Photography is a way of feeling, touching, and loving.
+    What is captured in film is remembered forever...
+    it remembers little things, long after you've forgotten.</h2>
+    <div class="images">
+      <div class="img-item">
+        <img src="static/africa.jpeg">
+      </div>
+      <div class="img-item">
+        <img src="static/airplane.jpeg">
+      </div>
+      <div class="img-item">
+        <img src="static/basketball.jpeg">
+      </div>
+      <div class="img-item">
+        <img src="static/girls.jpeg">
+      </div>
+      <div class="img-item">
+        <img src="static/wine.jpeg">
+      </div>
+      <div class="img-item">
+        <img src="static/food.jpeg">
+      </div>
+      <div class="img-item">
+        <img src="static/baby.jpeg">
+      </div>
+    </div>
+</body>
+
+<footer>
+  <i class="fa fa-fw fa-copyright"></i> Dream Photos 2021
+  <div class="contact">
+    <i class="fa fa-fw fa-facebook"></i>
+    <i class="fa fa-fw fa-instagram"></i>
+    <i class="fa fa-fw fa-envelope"></i>
+  </div>
+</footer>
+
+<!-- close x button
+<i class="fa fa-fw fa-close close-tab"> -->
